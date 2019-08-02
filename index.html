@@ -1,0 +1,318 @@
+﻿<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>ETC-2020 | VIT University | Vellore</title>
+<!-- jQuery library -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!---Style Sheet---->
+<link rel="stylesheet" href="css/boostrap.css" type="text/css" />
+<link rel="stylesheet" href="css/design.css" type="text/css" />
+<link rel="stylesheet" href="css/symbol.css" type="text/css" />
+<link rel="stylesheet"  href="animate/lightslider/lightslider.css"/>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+--><script src="animate/lightslider/lightslider.js"></script>
+<script src="js/jquery.loopmovement.min.js"></script>
+
+<!--author scroll-->
+<link rel="stylesheet" href="css/carouseller.css">
+<script src="js/carouseller.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+</head>
+<body class="home">
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <header class="gc1"><a href=index.html"> <img src="images/header.jpg" class="img-responsive" alt="header"></a>
+      <div class="col-xs-12">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+    </header>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Conference Info <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+           <li><a href="welcome-msg.html">Welcome Message</a></li>
+            <li><a href="conference-info.html#about-icnan">About VIT</a></li>
+            <li><a href="conference-info.html#themes">Themes</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Organisers <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="commitee.html#cc">Organising Commitee</a></li>
+            <li><a href="conveners.html">Advisory Commitee</a></li>
+
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Scope of Confernece<i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="scope.html">Scope</a></li>
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Submit Abstract <i class="caret"></i></a>
+        
+        <ul class="dropdown-menu">
+            <li><a href="gallery.html">ETC-2020 Abstract</a></li>
+          </ul>
+        </li>
+        
+        
+        <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Contact <i class="caret"></i></a>
+        
+        <ul class="dropdown-menu">
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+                        <li><a href="contact-us.html">For Enquiry</a></li>
+
+          </ul>
+        
+        </li>
+        <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Register <i class="caret"></i></a>
+        
+          <ul class="dropdown-menu">
+              <li><a href="http://icnanregistration.vit.ac.in/" target="blank">Register</a></li>
+                          <li><a href="accommodation.html">Accommodation</a></li>
+            </ul>
+          
+          </li>
+        <!-- <li><a href="#">Register</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+$(document).ready(function(){
+	
+	  // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+        var windowsize = $window.width();
+        if (windowsize > 440) {
+			
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+		
+	
+var div = $('#myNavbar');
+	var start = $(div).offset().top;
+	$.event.add(window, "scroll", function() {
+		var p = $(window).scrollTop();
+		$(div).css('position',((p)>start) ? 'fixed' : 'static');
+		$(div).css('top',((p)>start) ? '0px' : '');
+		$(div).css('z-index',((p)>start) ? '20000' : '');
+				$(div).css('right',((p)>start) ? '0px' : '');
+		$(div).css('left',((p)>start) ? '0px' : '');
+
+	});
+	
+	}
+
+});
+</script> 
+
+<!--welcome-content-->
+<div class="atom-box">
+  <div class="container">
+    <div class="row"><div><img src="images/vit-campus1.jpg" class="col"></div></div>
+    <div class="row" >
+      <div class="col-md-4 col-sm-6 col-xs-12 welcome-content text-center hidden-lg hidden-md hidden-sm mb20" style="padding-top:0px; border:0px">
+      <font  style="font-size: 20px;color: #fe0000;"> </font></span> <img src="images/Ada4.jpg" class="img-responsive mr20 mb10"> <span class="stl-1 text-uppercase"></span> <span class="stl-1 text-uppercase"></span>
+        <div class="space10"></div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="imp-dates">
+          <h3 class="head text-uppercase" wfd-id="40"> &nbsp;   Important Dates - <font color="#fe0000"> Extended </font> </h3>
+          <div id="box" wfd-id="59">
+            <div id="inner" class="top">
+              <div class="inner-wrapper" wfd-id="67"> <span class="content" wfd-id="72"> <strong>Abstract Submission  Opens: </strong> -  <font color="#fe0000" style="text-align:right; font-weight:600"> 16-08-2019</font>  </span> <span class="content" wfd-id="71"> <strong>Abstract Submission closes :</strong> - <font color="#fe0000">20-09-2019</font></span> <span class="content" wfd-id="70"> <strong>Intimation  of Anstract Acceptance </strong> - <font color="#fe0000">27-08-2019</font></span> <span class="content" wfd-id="69"> <strong>Early bird registration closes </strong> - 19-11-2019</span> <span class="content" wfd-id="68"> <strong>Last date for registration </strong> - 19-12-2019</span> <!--<span class="content" wfd-id="66"> <strong>Intimation of paper to Conference proceedings (with ISBN)/ Journal</strong> - 15-10-2019</span> <span class="content" wfd-id="65"> <strong>Final Submission as per the Journal’s format--></strong> <br>
+                </span> <span class="content" wfd-id="64"> <font color="#fe0000" style="text-align:center; font-weight:600">Conference Dates -  January 3 – 6, 2019</font></span> </div>
+            </div>
+          </div>
+          <script>
+$('#innesr').loopmovement({
+  // top, right, bottom, left
+  'direction':'top', 
+  // animation speed
+  'speed':20 
+});
+
+</script> 
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 welcome-content text-center hidden-xs" style="border:0px">
+       <span class="stl-1 text-uppercase pb10">
+       <font  style="font-size: 20px;color: #fe0000;"> </font></span> <img src="images/Ada4.jpg" class="img-responsive mr20 mb10"> <span class="stl-1 text-uppercase"></span> <span class="stl-1 text-uppercase"></span>
+        <div class="space10"></div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--about ICNAN'19-->
+<div class="about-us">
+  <div class="container">
+    <div class="row" wfd-id="64">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <h1 class="text-left mt10">About ETC 2020 <font style="color:#ee2d3d"></font></h1>
+            <p>This catalysis conference targets at bringing scientists and researchers, in a single platform, working in the broad areas of homogeneous, heterogeneous and bio-catalysis including catalysis in bioremediation.<strong></strong></p>
+            <ul class="list-unstyled home-themes"> 
+            <p><strong>Themes:</strong></p>
+           <li> Homogeneous catalysis for pharmaceutical applications</li>
+           <li>Cross coupling catalysis</li>
+           <li>Catalytic C-C and C-H bond activation</li>
+           <li>Organometallic catalysts</li>
+           <li>Metathesis</li>
+           <li>Earth-abundant metal catalysis</li>
+           <li>Green chemistry</li>
+           <li>Heterogeneous & Nano-catalysis</li>
+           <li>Bio- or enzymatic catalysis</li>
+           <li>Metal oxide catalysis</li>
+           <li>Bio- or enzymatic catalysis</li>
+           <li>Reaction mechanisms</li>
+           <li>Computational modelling in catalysis</li>
+           <li>Catalysis under flow</li>
+           <li>Noble metal catalysis</li>
+           <li>Asymmetric catalysis</li>
+           <li>Organocatalysis</li>
+
+    
+      </ul> </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <br>
+        <br>
+        <br>
+          <div class="gc4 fl"> <a href="images/ICNAN%20%2719%20Brochure.pdf" class="download-btn"> <i class="fa fa-download"></i>  Brochure</a> </div><div class="gc4 fl"><a href="images/Extended%20Abstract%20Template%20for%20ICNAN%27%2019.docx" class="abstract-btn"> <i class="fa fa-download"></i> Abstract</a></div>
+            <div class="imp-dates fl gc1">
+              <h3 class="head text-uppercase" wfd-id="40"> &nbsp; Themes</h3>
+              <div id="box"  class="boxh">
+                <div id="inner2" class="top">
+                  <div class="inner-wrapper" wfd-id="67"> 
+                  <span class="content"><i class="fa fa-chevron-circle-right"></i> Homogeneous catalysis for pharmaceutical applications</span> 
+                  <span class="content"><i class="fa fa-chevron-circle-right"></i> Cross coupling catalysis</span>
+                   <span class="content"><i class="fa fa-chevron-circle-right"></i> Catalytic C-C and C-H bond activation</span> 
+                   <span class="content"><i class="fa fa-chevron-circle-right"></i> Organometallic catalysts</span>
+                   <span class="content"><i class="fa fa-chevron-circle-right"></i> Metathesis</span>
+                      <span class="content"><i class="fa fa-chevron-circle-right"></i> Earth-abundant metal catalysis</span> 
+                      <span class="content"><i class="fa fa-chevron-circle-right"></i> Green chemistry</span>
+                       <span class="content"><i class="fa fa-chevron-circle-right"></i> Heterogeneous & Nano-catalysis</span>
+                        <span class="content"><i class="fa fa-chevron-circle-right"></i> Metal oxide catalysis</span>
+                         <span class="content"><i class="fa fa-chevron-circle-right"></i> Bio- or enzymatic catalysis</span>
+                          <span class="content"><i class="fa fa-chevron-circle-right"></i> Reaction mechanisms</span>
+                           <span class="content"><i class="fa fa-chevron-circle-right"></i> Computational modelling in catalysis</span>
+                            <span class="content"><i class="fa fa-chevron-circle-right"></i> Noble metal catalysis</span> </div>
+                            <span class="content"><i class="fa fa-chevron-circle-right"></i> Asymmetric catalysis</span> </div>
+            
+              </div>
+              <div class="space20"></div>
+              <script>
+    $('#inner2').loopmovement({
+      // top, right, bottom, left
+      'direction':'top', 
+      // animation speed
+      'speed':40 
+    });
+    
+    
+    </script> 
+          </div>
+        
+      
+      </div>
+            
+            <!--<a href="conference-info.php" class="btn-text">Read More <i class="fa fa-chevron-circle-right"></i></a>--></div>
+        </div>
+      
+</div>
+
+
+<!--spansors-->
+<div class="about-us bbn">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1 class="text-center">Our <font style="color:#ee2d3d">Sponsors</font></h1>
+        <div class="space10"></div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 pb20"> <img src="images/sponsor-1.jpg" class="img-responsive"> </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 pb20"> <img src="images/sponsor-2.jpg" class="img-responsive"> </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 pb20"> <img src="images/sponsor-3.jpg" class="img-responsive"> </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 pb20"> <img src="images/sponsor-4.jpg" class="img-responsive"> </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 pb20"> <img src="images/sponsor-5.jpg" class="img-responsive"> </div>
+      <div class="col-md-2 col-sm-2 col-xs-6  pb20"> <img src="images/sponsor-6.jpg" class="img-responsive"> </div>
+    </div>
+  </div>
+</div>
+<div class="gc1 timer cd100 ">
+  <div class="container">
+    <div class="col-md-3 col-sm-3 col-xs-3 text-center  bdr1"> <span class="days">35</span> <span class="s2-txt1">Days</span> </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 text-center bdr1"> <span class="hours">17</span> <span class="s2-txt1">Hours</span> </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 text-center bdr1"> <span class="minutes">50</span> <span class="s2-txt1">Mins</span> </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 text-center "> <span class="l2-txt1 seconds">39</span> <span class="s2-txt1">Secs</span> </div>
+  </div>
+</div>
+<footer class="gc1">
+<div class="gc1">
+
+
+
+<ul class="text-center">
+<li><a href="index.html">Home</a></li>
+<li><a href="conference-info.html">Conference Info</a></li>
+<li><a href="commitee.html">Organisers</a></li>
+<li><a href="publications-and-proceedings.html">Call For Papers</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+
+</ul>
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center adr-box">
+  <p> <strong>For Contact: </strong>Conference Organizing Chair 
+    ETC 2020 
+    School of Advanced Science 
+    Vellore Institute of Technology 
+    Vellore 632 014, Tamil Nadu, India 
+    </p><p> Tel: 0416 - 2202321, <a href="mailto:icetc2020@gmail.com">E-Mail: icetc2020@gmail.com</a></p>
+  </div>
+  <div class="comp-info text-center fl col-md-12 col-xs-12 col-sm-12 ">
+  <p>&copy; 2019-2020 Vellore Institute of Technology  </p> 
+  </div>
+  
+</footer>
+</body>
+
+<!-- Mirrored from vit.ac.in/ICNAN/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Aug 2019 07:21:54 GMT -->
+</html>
+<script src="js/countdowntime/moment.min.js"></script>
+<script src="js/countdowntime/moment-timezone.min.js"></script>
+<script src="js/countdowntime/moment-timezone-with-data.min.js"></script>
+<script src="js/countdowntime/countdowntime.js"></script>
+<script>
+$('.cd100').countdown100({
+/*Set Endtime here*/
+/*Endtime must be > current time*/
+endtimeYear: 2020,
+endtimeMonth: 1,
+endtimeDate: 3,
+endtimeHours: 8,
+endtimeMinutes: 59,
+endtimeSeconds: 59,
+timeZone: "Asia/Kolkata" 
+});
+</script>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Welcome Message | ICNAN'19</title>
+<!-- jQuery library -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!---Style Sheet---->
+<link rel="stylesheet" href="css/boostrap.css" type="text/css" />
+<link rel="stylesheet" href="css/design.css" type="text/css" />
+<link rel="stylesheet" href="css/symbol.css" type="text/css" />
+<script src="animate/lightslider/lightslider.js"></script>
+<script src="js/jquery.loopmovement.min.js"></script>
+
+
+
+
+</head>
+<body >
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <header class="gc1"><a href=index.html"> <img src="images/header.jpg" class="img-responsive" alt="header"></a>
+        <div class="col-xs-12">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+      </header>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Conference Info <i class="caret"></i></a>
+            <ul class="dropdown-menu">
+             <li><a href="welcome-msg.html">Welcome Message</a></li>
+              <li><a href="conference-info.html#about-icnan">About VIT</a></li>
+              <li><a href="conference-info.html#themes">Themes</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+            </ul>
+          </li>
+          <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Organisers <i class="caret"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="commitee.html#cc">Organising Commitee</a></li>
+              <li><a href="conveners.html">Advisory Commitee</a></li>
+  
+            </ul>
+          </li>
+          <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Scope of Confernece<i class="caret"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="scope.html">Scope</a></li>
+            </ul>
+          </li>
+          <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Submit Abstract <i class="caret"></i></a>
+          
+          <ul class="dropdown-menu">
+              <li><a href="gallery.html">ETC-2020 Abstract</a></li>
+            </ul>
+          </li>
+          
+          
+          <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Contact <i class="caret"></i></a>
+          
+          <ul class="dropdown-menu">
+              <li><a href="how-to-reach.html">How to Reach</a></li>
+                          <li><a href="contact-us.html">For Enquiry</a></li>
+  
+            </ul>
+          
+          </li>
+          <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Register <i class="caret"></i></a>
+          
+            <ul class="dropdown-menu">
+                <li><a href="http://icnanregistration.vit.ac.in/" target="blank">Register</a></li>
+                            <li><a href="accommodation.html">Accommodation</a></li>
+              </ul>
+            
+            </li>
+          <!-- <li><a href="#">Register</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+<script>
+$(document).ready(function(){
+	
+	  // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+        var windowsize = $window.width();
+        if (windowsize > 440) {
+			
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+		
+	
+var div = $('#myNavbar');
+	var start = $(div).offset().top;
+	$.event.add(window, "scroll", function() {
+		var p = $(window).scrollTop();
+		$(div).css('position',((p)>start) ? 'fixed' : 'static');
+		$(div).css('top',((p)>start) ? '0px' : '');
+		$(div).css('z-index',((p)>start) ? '20000' : '');
+				$(div).css('right',((p)>start) ? '0px' : '');
+		$(div).css('left',((p)>start) ? '0px' : '');
+
+	});
+	
+	}
+
+});
+</script> 
+
+<main class="container-fluid">
+<div class="container">
+<div class="row">
+<section class="col-md-9 col-sm-8 col-xs-12">
+<div id="hoc" class="gc1">
+<h1>Welcome Message</h1>
+
+<p>“<strong>Dear Colleagues and Friends,</strong>" </p>
+<p>Welcome !
+
+  The organizing committee warmly invites you to participate in the  Emerging Trends in the Catalysis – 2020 to be held in Vellore  Institute of Technology – Vellore campus, on January 6-8 2020. This conference is organized in association with Royal Society of Chemistry (RSC), UK. 
+  
+  This catalysis meet will be inaugurated by  Nobel Laureate Dr. Robert Grubbs, who has been awarded Nobel Prize in chemistry for his pioneering contributions in the field of olefin metathesis in the year 2005. This conference aims at bringing scientists, in a single platform, working in the broad area of catalysis which includes organometallic catalysts, bio-catalyst, catalyst used in bioremediation, homogeneous and heterogeneous catalysis This conference also provides avenues to bring participants together from academia, industry, and research institutes. This will also be an ideal platform for young researchers and mentoring students to cultivate research culture to create a society of intellectuals and visionaries.
+  
+  Welcome on behalf of the ETC-2020 Organizing Committee and it’s sponsors. Your participation and valuable contributions to this conference will sure make this event a grand success. We look forward to interacting with you all  in Vellore. </p>
+<p>I look forward to your participation, and wish everyone have an unforgettable stay at Vellore Institute of Technology, Vellore, India.</p>
+<p> Best Wishes,</p>
+<p> <strong>Dr. A. Mary Saral <br>Dean, SAS</strong>,<br>
+ Chair Person</p>
+
+</div>
+
+</section>
+
+
+
+
+</div>
+</div>
+</main>
+
+<footer class="gc1">
+<div class="gc1">
+
+
+
+<ul class="text-center">
+<li><a href="index.html">Home</a></li>
+<li><a href="conference-info.html">Conference Info</a></li>
+<li><a href="commitee.html">Organisers</a></li>
+<li><a href="publications-and-proceedings.html">Call For Papers</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+
+</ul>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center adr-box">
+  <p> <strong>For Contact: </strong>Conference Organizing Chair 
+    ETC 2020 
+    School of Advanced Science 
+    Vellore Institute of Technology 
+    Vellore 632 014, Tamil Nadu, India 
+    </p><p> Tel: 0416 - 2202321, <a href="mailto:icetc2020@gmail.com">E-Mail: icetc2020@gmail.com</a></p>
+  </div>
+  <div class="comp-info text-center fl col-md-12 col-xs-12 col-sm-12 ">
+  <p>&copy; 2019-2020 Vellore Institute of Technology  </p> 
+  </div>
+  
+</footer>
+
+
+</body>
+
+<!-- Mirrored from vit.ac.in/ICNAN/welcome-msg.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Aug 2019 07:22:40 GMT -->
+</html>

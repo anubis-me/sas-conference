@@ -1,0 +1,360 @@
+﻿<doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gallery | ICNAN'19</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all" />
+ <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--->
+
+<!---Style Sheet---->
+<link rel="stylesheet" href="css/boostrap.css" type="text/css" />
+<link rel="stylesheet" href="css/design.css" type="text/css" />
+<link rel="stylesheet" href="css/symbol.css" type="text/css" />
+
+<!--<script src="js/boostrap.min.js"></script>-->
+<link rel="stylesheet" href="animate/gallery/lightgallery.css" type="text/css" />
+<!---Gallery starts---->
+
+<!---Gellery Ends---->
+
+<!----Gallery----->
+<link rel="stylesheet"  href="css/assets.min.css" type="text/css" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<style>
+.gallery-list {
+	width: 90%;
+	margin: 0px auto;
+}
+.gallery-list li {
+	list-style-type: none;
+	margin-right: 20px;
+	width: 48%;
+	display: table;
+}
+.gallery-list li div {
+	margin-bottom: 20px;
+	width: 100%;
+}
+.gallery-list li div img {
+	width: 100%;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.main a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+.gallery-content {
+width:100%:;
+}
+.main a:hover {
+	
+	
+	background-color: #ddd;
+	color: black;
+}
+.nav>li>a {
+       padding:0.5em 1.5699em;
+}
+.previous {
+	background-color: #f1f1f1;
+	color: black;
+}
+.next {
+	background-color: #4CAF50;
+	color: white;
+}
+.round {
+	border-radius: 50%;
+}
+.gallery-box {
+	width: 100% !important;
+}
+.gallery-list ul li .pic img {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	height: 270px;
+}
+.demo-gallery > ul {
+	margin-bottom: 0;
+}
+.demo-gallery > ul > li {
+	float: left;
+	margin-bottom: 15px;
+	padding:0px !important;
+	
+}
+.demo-gallery > ul > li a {
+	border: 3px solid #FFF;
+	border-radius: 3px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+.demo-gallery > ul > li a > img {
+	-webkit-transition: -webkit-transform 0.15s ease 0s;
+	-moz-transition: -moz-transform 0.15s ease 0s;
+	-o-transition: -o-transform 0.15s ease 0s;
+	transition: transform 0.15s ease 0s;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+	opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: background-color 0.15s ease 0s;
+	-o-transition: background-color 0.15s ease 0s;
+	transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .justified-gallery > a > img {
+	-webkit-transition: -webkit-transform 0.15s ease 0s;
+	-moz-transition: -moz-transform 0.15s ease 0s;
+	-o-transition: -o-transform 0.15s ease 0s;
+	transition: transform 0.15s ease 0s;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	height: 100%;
+	width: 100%;
+}
+.demo-gallery .justified-gallery > a:hover > img {
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+	opacity: 1;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: background-color 0.15s ease 0s;
+	-o-transition: background-color 0.15s ease 0s;
+	transition: background-color 0.15s ease 0s;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+	height: 48px;
+	margin-left: -24px;
+	margin-top: -24px;
+	opacity: 0.8;
+	width: 48px;
+}
+.demo-gallery.dark > ul > li a {
+	border: 3px solid #04070a;
+}
+#lg-counter-current, #lg-counter-all {color:#fff}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="layout ">
+  <div class="layinn ">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <header class="gc1"><a href=index.html"> <img src="images/header.jpg" class="img-responsive" alt="header"></a>
+          <div class="col-xs-12">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+        </header>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Conference Info <i class="caret"></i></a>
+              <ul class="dropdown-menu">
+               <li><a href="welcome-msg.html">Welcome Message</a></li>
+                <li><a href="conference-info.html#about-icnan">About VIT</a></li>
+                <li><a href="conference-info.html#themes">Themes</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+              </ul>
+            </li>
+            <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Organisers <i class="caret"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="commitee.html#cc">Organising Commitee</a></li>
+                <li><a href="conveners.html">Advisory Commitee</a></li>
+    
+              </ul>
+            </li>
+            <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Scope of Confernece<i class="caret"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="scope.html">Scope</a></li>
+              </ul>
+            </li>
+            <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Submit Abstract <i class="caret"></i></a>
+            
+            <ul class="dropdown-menu">
+                <li><a href="gallery.html">ETC-2020 Abstract</a></li>
+              </ul>
+            </li>
+            
+            
+            <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Contact <i class="caret"></i></a>
+            
+            <ul class="dropdown-menu">
+                <li><a href="how-to-reach.html">How to Reach</a></li>
+                            <li><a href="contact-us.html">For Enquiry</a></li>
+    
+              </ul>
+            
+            </li>
+            <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Register <i class="caret"></i></a>
+            
+              <ul class="dropdown-menu">
+                  <li><a href="http://icnanregistration.vit.ac.in/" target="blank">Register</a></li>
+                              <li><a href="accommodation.html">Accommodation</a></li>
+                </ul>
+              
+              </li>
+            <!-- <li><a href="#">Register</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav><div class="separator">
+  <hr>
+  
+  </div> 
+<section>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="gc1">
+  <h1>Abstract Submission</h1><br>
+  <h2>Abstract Submission		: 	icetc2020@gmail.com</h3>
+<h2>    Not more than one A4 size page including figures, tables and references
+   <br> <br>
+    Abstract template – Click Here
+    <br> <br>
+    
+    Unique abstract ID will be generated – Use this ID during the registration and online payment <br>(After abstract acceptance notification)</h2><br><br>
+   <h1>Still you need more information?</h1><br><p>
+
+<br>
+    Abstract Submission	:               <strong>icetc2020@gmail.com </strong>   
+    
+    <br>
+    Email for Accommodation request	: <strong>icetc2020accom@gmail.com</strong>	
+    <br>
+    Contact number for accommodation (Ladies) only : <strong>9865045446</strong><br>
+    Contact number for accommodation (Gents) only : <strong>9494913334</strong> <br>
+    Contact number for Registration enquiry only :<strong>9600061952</strong> <br>
+    Contact number for oral and poster enquires only :<strong>9842639776</strong> <br>
+    
+    
+    
+    Organizing secretary : <strong>icetc2020@gmail.com </strong> <br>
+    Contact number : <strong>04162202321  (landline)</strong> <br>
+    
+    <br><br>
+    <strong>Fill the form below for further queries with the following:</strong> <br>
+    Information;<br>
+    Name : <br>
+    Email : <br>
+    Country :<br>
+    Brief message:</p><br><br><br>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+    <footer class="gc1">
+<div class="gc1">
+
+
+
+<ul class="text-center">
+<li><a href="index.html">Home</a></li>
+<li><a href="conference-info.html">Conference Info</a></li>
+<li><a href="commitee.html">Organisers</a></li>
+<li><a href="publications-and-proceedings.html">Call For Papers</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+
+</ul>
+
+
+
+</div>
+<div class="col-md-12 col-xs-12 col-sm-12 text-center adr-box">
+  <p> <strong>For Contact: </strong>Conference Organizing Chair 
+    ETC 2020 
+    School of Advanced Science 
+    Vellore Institute of Technology 
+    Vellore 632 014, Tamil Nadu, India 
+    </p><p> Tel: 0416 - 2202321, <a href="mailto:icetc2020@gmail.com">E-Mail: icetc2020@gmail.com</a></p>
+  </div>
+  <div class="comp-info text-center fl col-md-12 col-xs-12 col-sm-12 ">
+  <p>&copy; 2019-2020 Vellore Institute of Technology  </p> 
+  </div>
+  
+</footer>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+<script src="animate/gallery/picturefill.min.js"></script>
+<script src="animate/gallery/lightgallery-all.min.js"></script>
+<script src="animate/gallery/jquery.mousewheel.min.js"></script>
+
+<!-- Mirrored from vit.ac.in/ICNAN/gallery.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Aug 2019 07:22:14 GMT -->
+</html>

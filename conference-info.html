@@ -1,0 +1,254 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Conference Info | ICNAN'19</title>
+<!-- jQuery library -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!---Style Sheet---->
+<link rel="stylesheet" href="css/boostrap.css" type="text/css" />
+<link rel="stylesheet" href="css/design.css" type="text/css" />
+<link rel="stylesheet" href="css/symbol.css" type="text/css" />
+<script src="animate/lightslider/lightslider.js"></script>
+<script src="js/jquery.loopmovement.min.js"></script>
+
+<!--author scroll-->
+<link rel="stylesheet" href="css/carouseller.css">
+	<script src="js/carouseller.min.js"></script>
+            <script src="js/jquery.easing.1.3.js"></script> 
+
+
+</head>
+<body >
+<span id="about-icnan"></span>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <header class="gc1"><a href=index.html"> <img src="images/header.jpg" class="img-responsive" alt="header"></a>
+      <div class="col-xs-12">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+    </header>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Conference Info <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+           <li><a href="welcome-msg.html">Welcome Message</a></li>
+            <li><a href="conference-info.html#about-icnan">About VIT</a></li>
+            <li><a href="conference-info.html#themes">Themes</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Organisers <i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="commitee.html#cc">Organising Commitee</a></li>
+            <li><a href="conveners.html">Advisory Commitee</a></li>
+
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Scope of Confernece<i class="caret"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="scope.html">Scope</a></li>
+          </ul>
+        </li>
+        <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Submit Abstract <i class="caret"></i></a>
+        
+        <ul class="dropdown-menu">
+            <li><a href="gallery.html">ETC-2020 Abstract</a></li>
+          </ul>
+        </li>
+        
+        
+        <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Contact <i class="caret"></i></a>
+        
+        <ul class="dropdown-menu">
+            <li><a href="how-to-reach.html">How to Reach</a></li>
+                        <li><a href="contact-us.html">For Enquiry</a></li>
+
+          </ul>
+        
+        </li>
+        <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">Register <i class="caret"></i></a>
+        
+          <ul class="dropdown-menu">
+              <li><a href="http://icnanregistration.vit.ac.in/" target="blank">Register</a></li>
+                          <li><a href="accommodation.html">Accommodation</a></li>
+            </ul>
+          
+          </li>
+        <!-- <li><a href="#">Register</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+$(document).ready(function(){
+	
+	  // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+        var windowsize = $window.width();
+        if (windowsize > 440) {
+			
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+		
+	
+var div = $('#myNavbar');
+	var start = $(div).offset().top;
+	$.event.add(window, "scroll", function() {
+		var p = $(window).scrollTop();
+		$(div).css('position',((p)>start) ? 'fixed' : 'static');
+		$(div).css('top',((p)>start) ? '0px' : '');
+		$(div).css('z-index',((p)>start) ? '20000' : '');
+				$(div).css('right',((p)>start) ? '0px' : '');
+		$(div).css('left',((p)>start) ? '0px' : '');
+
+	});
+	
+	}
+
+});
+</script> 
+
+<main class="gc1 cf">
+<section class="">
+<div class="container">
+<div class="row">
+<div class="separator">
+<hr>
+</div> 
+<section>
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 col-sm-12 col-xs-12 fr">
+<div class="gc1">
+<div id="three"  class="carouseller"> 
+		<a href="javascript:void(0)" class="carouseller__left">‹</a> 
+		<div class="carouseller__wrap"> 
+			<div class="carouseller__list"> 
+				
+                
+                <div class="car__12">
+<img src="images/vit-campus2.jpg" class="img-responsive">
+				</div>
+                
+               
+                <div class="car__12">
+<img src="images/vit-campus3.jpg" class="img-responsive">
+				</div>
+                
+                <div class="car__12">
+<img src="images/vit-campus4.jpg" class="img-responsive">
+				</div>
+                
+                <div class="car__12">
+<img src="images/vit-campus5.jpg" class="img-responsive">
+				</div>
+                
+                
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="carouseller__right">›</a> 
+	</div>
+    <script type="text/javascript">
+        $(function() {
+        $('#three').carouseller({ 
+        scrollSpeed: 800,
+        autoScrollDelay: 3500,
+        easing: 'linear'
+        });
+        });
+        </script>
+        </div>
+        </div>
+
+
+<div class="col-md-6 col-sm-12 col-xs-12">
+
+<div  class="gc1">
+<h1>About VIT</h1>
+
+<p><strong>Vellore Institute of Technology (VIT)</strong> was established in 1984 as Vellore Engineering College by the Honourable Chancellor <strong>Dr. G. Viswanathan</strong> with the aim of providing quality higher education on par with international standards. From its humble beginning, the institution has grown to a premier educational institution with modest <strong>student strength of 39000 from 29 states and 7 union territories of India and 50 countries across the world. </strong></p>
+<p>Currently VIT has 4 campuses – in <strong>Vellore, Chennai, Amaravati (AP) and Bhopal (MP)</strong>. The National Institutional Ranking Framework (NIRF) of the MHRD, Government of India, has identified VIT as the best Private Engineering Institution in India in the year 2016 and in 2017. VIT has gone for accreditation by NAAC [India], IET [UK], and ABET [USA] and follows world class academic processes. VIT is the first and only in India to get 4 star rating from QS, the world universities ranking organization. </p><span id="about-cnr"></span>
+<p>The Industry consortium FICCI, has declared VIT as the <strong>“University of the Year 2016”</strong>, in India. VIT has also been ranked in the top 201-250 in QS BRICS Ranking in 2016 and in the top 251-300 in Times Higher Education (THE), Asia Ranking. With its strong academic partnerships with over 200 Universities around the globe, VIT excels in academics and research.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="separator">
+<hr>
+</div> 
+<section>
+<div class="container">
+<div class="row"></div>
+                
+                <div class="car__12">
+<img src="images/achie.jpg" class="img-responsive">
+			
+                    
+      
+
+
+
+</div>
+</div>
+
+</section>
+
+
+</main>
+
+<footer class="gc1">
+<div class="gc1">
+
+
+
+<ul class="text-center">
+<li><a href="index.html">Home</a></li>
+<li><a href="conference-info.html">Conference Info</a></li>
+<li><a href="commitee.html">Organisers</a></li>
+<li><a href="publications-and-proceedings.html">Call For Papers</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+
+</ul>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center adr-box">
+  <p> <strong>For Contact: </strong>Conference Organizing Chair 
+    ETC 2020 
+    School of Advanced Science 
+    Vellore Institute of Technology 
+    Vellore 632 014, Tamil Nadu, India 
+    </p><p> Tel: 0416 - 2202321, <a href="mailto:icetc2020@gmail.com">E-Mail: icetc2020@gmail.com</a></p>
+  </div>
+  <div class="comp-info text-center fl col-md-12 col-xs-12 col-sm-12 ">
+  <p>&copy; 2019-2020 Vellore Institute of Technology  </p> 
+  </div>
+  
+</footer>
+
+
+</body>
+
+<!-- Mirrored from vit.ac.in/ICNAN/conference-info.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Aug 2019 07:22:01 GMT -->
+</html>
