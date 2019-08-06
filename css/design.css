@@ -464,6 +464,11 @@ section .carouseller .carouseller__left, section .carouseller .carouseller__righ
     border-radius: 100%;
 }
 
+#particles-js{
+    height:200%;
+    position:absolute;
+    width:100%;
+}
 section  .carouseller .carouseller__left { left: 5px;top: 50%;z-index:1}
 section  .carouseller .carouseller__right {right: 5px;top: 50%;}
 #two  .car__12  {border:1px solid #ccc}
@@ -494,6 +499,8 @@ section ul li:before {
     font-size: 15px;
     color: #f32d3a;
 }
+
+
 
 section ul ul li:before {
     content: '\f058';
