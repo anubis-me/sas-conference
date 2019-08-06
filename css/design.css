@@ -21,6 +21,10 @@ padding: 0;
 outline: 0 none
 }
 
+#myNavbar   {
+    background-color: #08248D;
+}
+
 /*** Hide & Seeek ***/
 .desk-only {
 display: block
@@ -1556,4 +1560,5 @@ margin-top:11px !important;
 
 .navbar-brand img{
 width:300px !important;
+}
 }
